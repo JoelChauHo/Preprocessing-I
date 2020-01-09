@@ -1,3 +1,6 @@
+@primary-color: #6C0909;
+
+/* Compile your LESS file! */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -161,7 +164,8 @@ p {
   }
   */
 header {
-  height: 80vh;
+  border: solid;
+  height: 70vh;
   background-position: left;
   background-size: 60%;
   background-repeat: no-repeat;
@@ -173,14 +177,18 @@ header nav {
   justify-content: space-around;
   padding: 5%;
   margin-left: 50%;
+  border: solid;
 }
 header nav a {
   font-size: 1.8rem;
-  color: #6C5659;
 }
 .heading-box {
+
+  border: solid;
+  display: flex;
+  flex-direction: column;
   margin-left: 5%;
-  text-align: right;
+  text-align: left;
   padding: 0 5%;
 }
 .heading-image1 {
@@ -194,33 +202,31 @@ h1 {
   font-size: 5rem;
   margin-left: 5%;
 }
-#heading-button h2 {
-  display: flex;
-  background-color: #8c8c8c;
-  width: 50%;
-  padding: 2%;
-  margin-left: 2%;
-}
 #About {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 5%;
-  margin: 5% 1%;
 }
 .About-left {
+  border: solid;
   display: flex;
   flex-direction: column;
 }
 .About-right {
+  border: solid;
   display: flex;
   flex-direction: column;
+  
 }
 .About-right-item {
   display: flex;
   border: 1px solid;
+ 
+  
 }
+
 #Portfolio {
+  border: solid;
   display: flex;
   flex-direction: column;
 }
@@ -230,56 +236,42 @@ h1 {
   flex-direction: row;
 }
 .Portfolio-item-container {
+  border: solid;
   display: flex;
   flex-direction: row;
 }
 .porfolio-item1 {
   display: flex;
-  border: 1px solid;
-  width: 10%;
+  border: solid;
+  width:10%;
   flex-direction: column;
 }
 .porfolio-item2 {
   display: flex;
-  border: 1px solid;
-  width: 20%;
+  border: solid;
+  width:20%;
   flex-direction: column;
 }
 .porfolio-item3 {
   display: flex;
-  border: 1px solid;
-  width: 30%;
+  border: solid;
+  width:30%;
   flex-direction: column;
+
 }
 .porfolio-item4 {
   display: flex;
-  border: 1px solid;
-  width: 40%;
+  border: solid;
+  width:40%;
   flex-direction: column;
 }
-.white-row {
-  display: flex;
-  background-color: white;
+.white-row{
+  display:flex;
+  background-color:  white;
 }
-.grey-row {
-  display: flex;
-  background-color: #EEEEEE;
-  border: 1px solid;
-}
-#Contact {
-  color: #6C0909;
-  background-image: none;
-  background-position: center;
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-#Contact div {
-  padding: 3% 15%;
-  text-align: center;
-}
-footer p {
-  display: flex;
-  justify-content: center;
+.grey-row{
+  display:flex;
+  background-color: rgb(100, 100, 100);
 }
 #Contact {
   color: #6C0909;
@@ -295,11 +287,4 @@ footer p {
 footer p {
   display: flex;
   justify-content: center;
-}
-.footer-content nav {
-  display: flex;
-  width: 40%;
-  margin-left: 30%;
-  padding: 2%;
-  justify-content: space-around;
 }
