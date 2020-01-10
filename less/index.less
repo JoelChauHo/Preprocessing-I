@@ -1,8 +1,20 @@
+// out: ../css/index.css
 // Is this working?
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
+@primary-color: #6C0909;
+@primary-color2: #6C5659;
+.pad-mar(){
+		padding: 2%;
+		margin-left: 2%;
+}
+.port-dis(){
+	display: flex;
+	border: 1px solid;
+	flex-direction: column;
+}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -53,7 +65,189 @@ table {
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-}
+html {
+	font-size: 62.5%;
+  }
+  
+  h1 {
+	font-size: 5rem;
+  }
+  
+  h2 {
+	font-size: 3rem;
+  }
+  
+  h3 {
+	font-size: 2.4rem;
+  }
+  
+  p {
+	font-size: 1.8rem;
+  }
 
+/* test
+.product-item {
+	width: 30%;
+	margin: 1%;
+	display: flex;
+   
+	flex-direction: column;
+	align-items: center;
+  }
+  
+  .product-item h3 {
+	text-align: center;
+	padding: 4% 0; 
+  }
+  */
+
+  header {
+	
+	height: 80vh;
+	//background-image: url('../images/header4.jpg');
+	background-position: left;
+	background-size: 60%;
+	background-repeat: no-repeat;
+	background-color: #EEEEEE;
+	color: @primary-color2;
+	nav {
+		display: flex;
+		justify-content: space-around;
+		padding: 5%;
+		margin-left: 50%;
+		
+	  }
+	  a {
+		font-size: 1.8rem;
+		color: @primary-color2; 
+	
+	  }
+  }
+   
+    .heading-box {
+	
+	margin-left: 5%;
+	text-align: right;
+	padding: 0 5%;
+  }
+
+  .heading-image1 {
+	width: 200px;
+	height: 200px;
+	background-image: url('../images/header4.jpg');
+	background-size: cover;
+  }
+  h1 {
+	  display: flex;
+	  font-size: 5rem;
+	  margin-left: 5%;
+  }
+  #heading-button h2{
+	  display: flex;
+		background-color: rgb(140, 140, 140);
+		width: 50%;
+		
+		.pad-mar();
+
+  }
+  #About {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 5%;
+	margin: 5% 1%;
+  }
+  .About-left {
+	
+	display: flex;
+	flex-direction: column;
+  }
+  .About-right {
+	
+	display: flex;
+	flex-direction: column;
+	
+  }
+  .About-right-item {
+	display: flex;
+	border: 1px solid;
+   
+	
+  }
+  
+  #Portfolio {
+	
+	display: flex;
+	flex-direction: column;
+  }
+  .Portfolio-container {
+	border: solid;
+	display: flex;
+	flex-direction: row;
+  }
+  .Portfolio-item-container {
+	
+	display: flex;
+	flex-direction: row;
+  }
+  .porfolio-item1 {
+	.port-dis();
+	width:10%;
+	
+  }
+  .porfolio-item2 {
+	.port-dis();
+	width:20%;
+	
+  }
+  .porfolio-item3 {
+	.port-dis();
+	width:30%;
+	
+  
+  }
+  .porfolio-item4 {
+	.port-dis();
+	width:40%;
+	
+  }
+  .white-row{
+	display:flex;
+	background-color:  white;
+	
+  }
+  .grey-row{
+	display:flex;
+	background-color: #EEEEEE;
+	border: 1px solid;
+  }
+  #Contact {
+	color: #6C0909;
+	background-image: none;
+	background-position: center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	div {
+		padding: 3% 15%;
+		text-align: center;
+	  }
+  }
+ 
+  footer p {
+	display: flex;
+	justify-content: center;
+  }
+ 
+
+  footer p{
+	  display: flex;
+	  justify-content: center;
+  }
+  .footer-content nav {
+	display: flex;
+	width: 40%;
+	margin-left: 30%;
+	padding: 2%;
+
+	justify-content: space-around;
+  }
